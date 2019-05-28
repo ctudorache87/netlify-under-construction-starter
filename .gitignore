@@ -1,0 +1,4 @@
+node_modules
+lambda/*.js
+dist/js/*.js
+.env

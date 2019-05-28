@@ -1,0 +1,25 @@
+{
+  "name": "under_construction_starter",
+  "version": "1.0.0",
+  "description": "Netlify Under Construction website starter",
+  "scripts": {
+    "lambda-serve": "netlify-lambda serve lambda_src",
+    "lambda-build": "netlify-lambda build lambda_src",
+    "build": "NODE_ENV=production webpack && netlify-lambda build lambda_src",
+    "dev": "NODE_ENV=development concurrently 'webpack-dev-server' 'npm run lambda-serve'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^8.0.0",
+    "netlify-lambda": "^1.4.13"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
